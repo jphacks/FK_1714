@@ -17,10 +17,11 @@ class TweetsViewController: UITableViewController {
                                   Tweet(title: "bar", body: "barbar")]
     
     override func viewDidLoad() {
+        print(tweets.count)
     
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(in tableView: UITableView) -> Int {
         return 1
     }
     
@@ -29,8 +30,8 @@ class TweetsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath as IndexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
         let tweet = tweets[indexPath.row]
         cell.textLabel?.text = tweet.title
         
