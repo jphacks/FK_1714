@@ -2,7 +2,7 @@
 # hiroki-7122
 # Daiki
 # DAYAMA
-# Kurasher
+# Kurasher test_push_10/28
 # mori
 # push test kawabata
 # test
