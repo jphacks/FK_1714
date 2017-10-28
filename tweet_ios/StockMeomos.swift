@@ -26,7 +26,7 @@ class StockMemos: NSObject {
         })
         
         Alamofire.request("http://localhost:3000/show.json", method: .get).responseJSON(completionHandler: { response in
-            print(response.value) // レスポンスがディクショナリ形式で入っている
+            print(response.value)
             
         })
         
