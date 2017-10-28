@@ -24,6 +24,7 @@ class TweetDetailViewController: UIViewController {
         if let tweet = self.tweet {
             print(tweet.title)
             print(tweet.body)
+            
             titleTextLabel.text? = tweet.title
             bodyTextLabel.text? = tweet.body
         }
