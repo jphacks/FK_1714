@@ -16,28 +16,19 @@ class StockMemos: NSObject {
     class func postMemo(memo: Memo) {
         
         var params: [String: AnyObject] = [
-            "text": memo.text as AnyObject
+            "text": "ダーヤマー" as AnyObject
         ]
         
         // HTTP通信
         Alamofire.request("http://localhost:3000/api/memos", method: .post, parameters: params).responseString(completionHandler: { response in
-            print(request)
-            print(response)
-//            print(data)
-//            print(error)
+//            print(request)
+//            print(response)
         })
-//        Alamofire.request(.POST, "http://localhost:3000/api/memos", parameters: params).response{request, response, parameters, error in
-//            
-//            println("=============request=============")
-//            println(request)
-//            println("=============response============")
-//            println(response)
-//            println("=============JSON================")
-//            println(JSON)
-//            println("=============error===============")
-//            println(error)
-//            println("=================================")
-//        }
+        
+        Alamofire.request("http://localhost:3000/show.json", method: .get).responseJSON(completionHandler: { response in
+            print(response.value) // レスポンスがディクショナリ形式で入っている
+            
+        })
         
     }
 }

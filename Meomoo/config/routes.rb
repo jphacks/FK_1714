@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   end
   
   get  'bbb' => 'application#aaa'
+  get 'show' => "api/memos#show"
 
 end
