@@ -12,7 +12,7 @@ class Api::MemosController < ApplicationController
       @error_message = [memo.errors.full_messages].compact # エラーが入ってるインスタンス変数を定義
     end
   end
-  
+
   def show
     @memos = Memo.all
     p @memos
