@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tweet_ios/TweetsViewController.swift"
-            timestampString = "530358911.719773"
+            timestampString = "530847339.738322"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "numberOfSectionsInTableView(in:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -56,13 +56,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "tweet_ios/TweetsViewController.swift"
-            timestampString = "530695583.783582"
+            timestampString = "530847339.738322"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "TweetsViewController"
-            landmarkType = "3">
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "numberOfSectionsInTableView(in:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

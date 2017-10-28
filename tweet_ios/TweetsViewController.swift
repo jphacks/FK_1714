@@ -17,8 +17,6 @@ class TweetsViewController: UITableViewController {
                                   Tweet(title: "bar", body: "barbar")]
     
     override func viewDidLoad() {
-        print(tweets.count)
-    
     }
     
     func numberOfSectionsInTableView(in tableView: UITableView) -> Int {
@@ -41,6 +39,9 @@ class TweetsViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
+                let memo = Memo()
+                memo.text = "aaaa"
+                StockMemos.postMemo(memo: memo)
                 let tweet = tweets[indexPath.row]
                 let controller = segue.destination as! TweetDetailViewController
                 controller.tweet = tweet
@@ -49,4 +50,5 @@ class TweetsViewController: UITableViewController {
             }
         }
     }
+
 }
