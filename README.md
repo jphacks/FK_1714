@@ -2,7 +2,7 @@
 # 一夜一会
 
 同じ寝言は赤い糸！？寝言マッチングアプリ
-[![Product Name](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
+[![一夜一会](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/3n_5DcIoUiQ)
 
 ## 製品概要
 ### 寝言 × Tech
