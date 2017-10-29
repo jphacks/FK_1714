@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wb9-0K-kWi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="BhQ-gP-qNa">
+            <objects>
+                <tableViewController id="Wb9-0K-kWi" customClass="TweetsViewController" customModule="tweet_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IMk-Je-Ihg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="6nn-Ib-crR">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6nn-Ib-crR" id="2c2-0g-qSc">
+
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="W4I-gY-ZrK" kind="show" identifier="showDetail" action="showDetailViewController:sender:" id="zUP-6H-dvn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wb9-0K-kWi" id="Etr-Jv-Qg4"/>
+                            <outlet property="delegate" destination="Wb9-0K-kWi" id="IZn-mz-W8I"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="3l6-XA-WM8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPw-IE-bNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="114.69265367316342"/>
+        </scene>
+        <!--Tweet Detail View Controller-->
+        <scene sceneID="8My-xp-ysX">
+            <objects>
+                <viewController id="W4I-gY-ZrK" customClass="TweetDetailViewController" customModule="tweet_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qTx-8y-dHt"/>
+                        <viewControllerLayoutGuide type="bottom" id="gsx-OW-4vt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="37D-HM-2iv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQy-4Q-SDo">
+                                <rect key="frame" x="75" y="191" width="29" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2RI-j7-1lX"/>
+                                    <constraint firstAttribute="height" constant="100" id="o1L-Sv-fUT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="body" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD0-Tt-4dt">
+                                <rect key="frame" x="70" y="281" width="39" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3Yp-rZ-ccU"/>
+                                    <constraint firstAttribute="height" constant="100" id="oxT-cM-qX8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pTF-Mi-Kw0"/>
+                    <connections>
+                        <outlet property="bodyTextLabel" destination="GD0-Tt-4dt" id="ND9-Xi-0dW"/>
+                        <outlet property="titleTextLabel" destination="QQy-4Q-SDo" id="4sK-cR-RFQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZj-0q-yGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QAe-Ir-jdw">
+            <objects>
+                <navigationController id="YfD-5H-tCU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dz0-cA-xew">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wb9-0K-kWi" kind="relationship" relationship="rootViewController" id="IdB-YW-kws"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFa-11-iLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="115"/>
+        </scene>
+    </scenes>
+</document>
