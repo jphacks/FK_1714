@@ -39,25 +39,24 @@
 
 * NTTレゾナントの語句類似度算出API
 
-*
-
-*
 
 #### フレームワーク・ライブラリ・モジュール
 * Ruby on Rails
 
-* Swift
+* データベースにMySQL使用
+
+* json.builderでswift側とhttp通信
+
+* Speech Framework
 
 #### デバイス
 * なし
 
-*
 
 ### 研究内容・事前開発プロダクト（任意）
 
 * なし
 
-*
 
 
 ### 独自開発技術（Hack Dayで開発したもの）
