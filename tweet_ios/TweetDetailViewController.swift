@@ -22,11 +22,11 @@ class TweetDetailViewController: UIViewController {
         super.viewDidLoad()
         
         if let tweet = self.tweet {
-            print(tweet.title)
-            print(tweet.body)
+//            print(tweet.title)
+//            print(tweet.body)
             
             titleTextLabel.text? = tweet.title
-            bodyTextLabel.text? = tweet.body
+//            bodyTextLabel.text? = tweet.body
         }
     }
 }

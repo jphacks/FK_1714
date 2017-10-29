@@ -16,7 +16,9 @@ class StockMemos: NSObject {
     class func postMemo(memo: Memo) {
         
         var params: [String: AnyObject] = [
-            "text": "ダヤマ" as AnyObject
+//            "text": memo.text as AnyObject
+            "text": "ほげ" as AnyObject
+//            print(speachLast)
         ]
         
         // HTTP通信
@@ -27,8 +29,11 @@ class StockMemos: NSObject {
         
         Alamofire.request("http://localhost:3000/show.json", method: .get).responseJSON(completionHandler: { response in
             print(response.value)
-            
+            var laala: Int!
+            laala = 1
+            if let laata = response.value{
+                print("やったぜ")
+            }
         })
-        
     }
 }
