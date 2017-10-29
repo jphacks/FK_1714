@@ -15,8 +15,9 @@ class TweetsViewController: UITableViewController {
     private var tweets:[Tweet] = [Tweet(title: "hoge", body: "hogehoge"),
                                   Tweet(title: "foo", body: "fooooo"),
                                   Tweet(title: "bar", body: "barbar")]
-    
+    var speachLast = ""
     override func viewDidLoad() {
+//        print(speachLast)
     }
     
     func numberOfSectionsInTableView(in tableView: UITableView) -> Int {
@@ -40,7 +41,7 @@ class TweetsViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let memo = Memo()
-                memo.text = "aaaa"
+                memo.text = speachLast
                 StockMemos.postMemo(memo: memo)
                 let tweet = tweets[indexPath.row]
                 let controller = segue.destination as! TweetDetailViewController
