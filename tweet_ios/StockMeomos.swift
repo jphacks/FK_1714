@@ -16,7 +16,7 @@ class StockMemos: NSObject {
     class func postMemo(memo: Memo) {
         
         var params: [String: AnyObject] = [
-            "text": "CCC" as AnyObject
+            "text": "CC" as AnyObject
         ]
         
         // HTTP通信
