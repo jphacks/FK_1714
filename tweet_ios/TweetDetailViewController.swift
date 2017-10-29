@@ -26,7 +26,7 @@ class TweetDetailViewController: UIViewController {
 //            print(tweet.body)
             
             titleTextLabel.text? = tweet.title
-            bodyTextLabel.text? = tweet.body
+//            bodyTextLabel.text? = tweet.body
         }
     }
 }

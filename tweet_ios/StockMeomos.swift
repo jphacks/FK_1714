@@ -32,10 +32,8 @@ class StockMemos: NSObject {
             var laala: Int!
             laala = 1
             if let laata = response.value{
-//            if(response.result.value == 1){
                 print("やったぜ")
             }
         })
-        
     }
 }

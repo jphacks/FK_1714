@@ -12,9 +12,17 @@ import UIKit
 class TweetsViewController: UITableViewController {
     
     // ダミーデータ
-    private var tweets:[Tweet] = [Tweet(title: "hoge", body: "hogehoge"),
-                                  Tweet(title: "foo", body: "fooooo"),
-                                  Tweet(title: "bar", body: "barbar")]
+    private var tweets:[Tweet] = [Tweet(title: "むにゃむにゃ", body: "hogehoge"),
+                                  Tweet(title: "ほげほげ", body: "fooooo"),
+                                  Tweet(title: "ふが", body: "barbar"),
+                                  Tweet(title: "ひろき", body: "barbar"),
+                                  Tweet(title: "げほ", body: "barbar"),
+                                  Tweet(title: "がーがー", body: "barbar"),
+                                  Tweet(title: "まんじ", body: "barbar"),
+                                  Tweet(title: "まじ", body: "barbar"),
+                                  Tweet(title: "まんじ", body: "barbar"),
+                                  Tweet(title: "たすけて", body: "barbar"),
+                                  Tweet(title: "すき", body: "barbar"),]
     var speachLast = ""
     override func viewDidLoad() {
 //        print(speachLast)

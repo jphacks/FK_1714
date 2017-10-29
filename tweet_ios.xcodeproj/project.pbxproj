@@ -22,6 +22,7 @@
 		AC077B781FA56F0F008E505E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC077B761FA56F0E008E505E /* InitialViewController.swift */; };
 		AC077B791FA56F0F008E505E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC077B771FA56F0E008E505E /* ViewController.swift */; };
 		AC077B831FA57021008E505E /* saki.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC077B821FA57021008E505E /* saki.storyboard */; };
+		ACD117B31FA594CE00BA3915 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD117B21FA594CE00BA3915 /* MatchingViewController.swift */; };
 		C10E374BF3D7D6A156059D52 /* Pods_tweet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E2870C7B161DE03A27C395 /* Pods_tweet_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		AC077B761FA56F0E008E505E /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitialViewController.swift; path = "../../masu/ios-speech-to-text-sample/SpeechToText/InitialViewController.swift"; sourceTree = "<group>"; };
 		AC077B771FA56F0E008E505E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../masu/ios-speech-to-text-sample/SpeechToText/ViewController.swift"; sourceTree = "<group>"; };
 		AC077B821FA57021008E505E /* saki.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = saki.storyboard; path = ../../Downloads/Negoto_S/saki.storyboard; sourceTree = "<group>"; };
+		ACD117B21FA594CE00BA3915 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				4F7405241F9C9EF300F65A2E /* AppDelegate.swift */,
 				4F7405281F9C9EF400F65A2E /* Main.storyboard */,
+				ACD117B21FA594CE00BA3915 /* MatchingViewController.swift */,
 				AC077B821FA57021008E505E /* saki.storyboard */,
 				AC077B761FA56F0E008E505E /* InitialViewController.swift */,
 				AC077B771FA56F0E008E505E /* ViewController.swift */,
@@ -427,6 +430,7 @@
 				4F7405551F9CA06F00F65A2E /* Tweet.swift in Sources */,
 				AC077B781FA56F0F008E505E /* InitialViewController.swift in Sources */,
 				4FE7E6211FA31314006AFB9F /* TweetDetailViewController.swift in Sources */,
+				ACD117B31FA594CE00BA3915 /* MatchingViewController.swift in Sources */,
 				4F7405251F9C9EF300F65A2E /* AppDelegate.swift in Sources */,
 				4F7405531F9C9F4300F65A2E /* TweetsViewController.swift in Sources */,
 				4FFF9AD91FA416A000742005 /* StockMeomos.swift in Sources */,
