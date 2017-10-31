@@ -19,8 +19,8 @@
 		4FE7E6211FA31314006AFB9F /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE7E6201FA31314006AFB9F /* TweetDetailViewController.swift */; };
 		4FFF9AD71FA4168D00742005 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF9AD61FA4168D00742005 /* Memo.swift */; };
 		4FFF9AD91FA416A000742005 /* StockMeomos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF9AD81FA416A000742005 /* StockMeomos.swift */; };
-		AC077B781FA56F0F008E505E /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC077B761FA56F0E008E505E /* InitialViewController.swift */; };
-		AC077B791FA56F0F008E505E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC077B771FA56F0E008E505E /* ViewController.swift */; };
+		AC01DDAC1FA86A6100854EDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01DDAA1FA86A6000854EDB /* ViewController.swift */; };
+		AC01DDAD1FA86A6100854EDB /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01DDAB1FA86A6100854EDB /* InitialViewController.swift */; };
 		ACB836081FA5ABFE00BB2841 /* saki.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB836071FA5ABFE00BB2841 /* saki.storyboard */; };
 		ACD117B31FA594CE00BA3915 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD117B21FA594CE00BA3915 /* MatchingViewController.swift */; };
 		C10E374BF3D7D6A156059D52 /* Pods_tweet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E2870C7B161DE03A27C395 /* Pods_tweet_ios.framework */; };
@@ -68,8 +68,8 @@
 		60E2870C7B161DE03A27C395 /* Pods_tweet_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tweet_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7005DBE78D67F657401BE713 /* Pods_tweet_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tweet_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCA411002B00D572D4172C1 /* Pods-tweet_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tweet_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-tweet_ios/Pods-tweet_ios.release.xcconfig"; sourceTree = "<group>"; };
-		AC077B761FA56F0E008E505E /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitialViewController.swift; path = "../../masu/ios-speech-to-text-sample/SpeechToText/InitialViewController.swift"; sourceTree = "<group>"; };
-		AC077B771FA56F0E008E505E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../masu/ios-speech-to-text-sample/SpeechToText/ViewController.swift"; sourceTree = "<group>"; };
+		AC01DDAA1FA86A6000854EDB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC01DDAB1FA86A6100854EDB /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		ACB836071FA5ABFE00BB2841 /* saki.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = saki.storyboard; path = ../../../Downloads/Negoto_S/saki.storyboard; sourceTree = "<group>"; };
 		ACD117B21FA594CE00BA3915 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,10 +139,10 @@
 			children = (
 				4F7405241F9C9EF300F65A2E /* AppDelegate.swift */,
 				4F7405281F9C9EF400F65A2E /* Main.storyboard */,
+				AC01DDAB1FA86A6100854EDB /* InitialViewController.swift */,
+				AC01DDAA1FA86A6000854EDB /* ViewController.swift */,
 				ACB836071FA5ABFE00BB2841 /* saki.storyboard */,
 				ACD117B21FA594CE00BA3915 /* MatchingViewController.swift */,
-				AC077B761FA56F0E008E505E /* InitialViewController.swift */,
-				AC077B771FA56F0E008E505E /* ViewController.swift */,
 				4FE7E6201FA31314006AFB9F /* TweetDetailViewController.swift */,
 				4F7405541F9CA06F00F65A2E /* Tweet.swift */,
 				4F7405521F9C9F4300F65A2E /* TweetsViewController.swift */,
@@ -427,14 +427,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC01DDAC1FA86A6100854EDB /* ViewController.swift in Sources */,
 				4F7405551F9CA06F00F65A2E /* Tweet.swift in Sources */,
-				AC077B781FA56F0F008E505E /* InitialViewController.swift in Sources */,
+				AC01DDAD1FA86A6100854EDB /* InitialViewController.swift in Sources */,
 				4FE7E6211FA31314006AFB9F /* TweetDetailViewController.swift in Sources */,
 				ACD117B31FA594CE00BA3915 /* MatchingViewController.swift in Sources */,
 				4F7405251F9C9EF300F65A2E /* AppDelegate.swift in Sources */,
 				4F7405531F9C9F4300F65A2E /* TweetsViewController.swift in Sources */,
 				4FFF9AD91FA416A000742005 /* StockMeomos.swift in Sources */,
-				AC077B791FA56F0F008E505E /* ViewController.swift in Sources */,
 				4FFF9AD71FA4168D00742005 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
