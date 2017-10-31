@@ -15,3 +15,8 @@
 ##
 *.xcworkspace/*
 !*.xcworkspace/contents.xcworkspacedata
+
+README.md~
+negoto_daiki/
+NegotoM/
+NefotoS/
