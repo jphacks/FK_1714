@@ -2,7 +2,7 @@
 # 一夜一会
 
 同じ寝言は赤い糸！？寝言マッチングアプリ
-[![一夜一会](https://youtu.be/3n_5DcIoUiQ)](https://youtu.be/3n_5DcIoUiQ)
+[![一夜一会](https://user-images.githubusercontent.com/12492226/32214665-f57ce890-be62-11e7-9ef2-f2ed94520960.png)](https://youtu.be/3n_5DcIoUiQ)
 
 ## 製品概要
 ### 寝言 × Tech
