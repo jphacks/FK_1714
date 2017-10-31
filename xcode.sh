@@ -9,7 +9,7 @@ LIST=`git ls-files -i --exclude-from=.gitignore`
 for i in $LIST  
 do  
 echo $i  
-git rm -f --cached $i  
+git rm -f -r --cached $i  
 done
 
 ## Commit local removal.
